@@ -13,15 +13,24 @@ MonoBehaviour:
   m_Name: WaveDatabase
   m_EditorClassIdentifier: 
   _waveEntityDatas:
-  - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 6d9b29c4d27ec9245a717563b49c2d9e,
+  - _waveEntityPrefab: {fileID: 5412690654039449867, guid: a41c02d95803fdc41b75166b85da0c90,
       type: 3}
     _entityType: 1
+  - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 6d9b29c4d27ec9245a717563b49c2d9e,
+      type: 3}
+    _entityType: 5
   - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 0bf05c3b4dcbce74f99337061d768f04,
+      type: 3}
+    _entityType: 3
+  - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 4df2d1ee21a90d64c880e337ab37bc57,
+      type: 3}
+    _entityType: 6
+  - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 580e1f22557988c40ad7ed4844da38aa,
       type: 3}
     _entityType: 2
   - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 5e3c08dd4a6bacf42b6cfcade9706784,
       type: 3}
-    _entityType: 3
+    _entityType: 4
   _waves:
   - {fileID: 11400000, guid: a459061dc5860024590f76ddef462ecd, type: 2}
   - {fileID: 11400000, guid: a530391b5ce8c734eac723b1d05fa896, type: 2}

@@ -84,8 +84,16 @@
 					if (Physics.Raycast(ray, out hit, float.MaxValue, _layerMask))
 					{
 						sentryScreen.GetComponent<SentryMenu>().selectedSentry = hit.transform.gameObject;
+                        sentryScreen.SetActive(true);
 
-						sentryScreen.SetActive(true);
+                        if (sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<Tower>().isMaxLevel == true)
+						{
+							sentryScreen.GetComponent<SentryMenu>().upgradeButton.SetActive(false);
+                        }
+						else
+						{
+                            sentryScreen.GetComponent<SentryMenu>().upgradeButton.SetActive(true);
+                        }
 					}
 				}
 			}
