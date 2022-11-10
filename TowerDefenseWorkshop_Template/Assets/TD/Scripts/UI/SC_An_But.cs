@@ -19,7 +19,7 @@ public class SC_An_But : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     
     public void ClickOnBut() {
-        _audioManagerRef.PlayClipAt(soundClick, this.transform.position);
+        // _audioManagerRef.PlayClipAt(soundClick, this.transform.position);
         if (_isButChangerScene)
             animatorButton.SetTrigger("Trigger_Click");
     }

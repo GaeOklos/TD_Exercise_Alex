@@ -29,6 +29,12 @@
         [SerializeField]
         private GameObject sentryScreen;
 
+		[SerializeField] private GameObject fireStone;
+		[SerializeField] private GameObject waterStone;
+		[SerializeField] private GameObject woodStone;
+		[SerializeField] private GameObject earthStone;
+		[SerializeField] private GameObject metalStone;
+
         public PlayerPickerController PlayerPickerController
 		{
 			get
@@ -65,6 +71,32 @@
 
 		private void Update()
 		{
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+			if(Physics.Raycast(ray, out hit, float.MaxValue, 14))
+			{
+				//Recupere StoneDatabase
+				if(hit.transform.gameObject == fireStone)
+                {
+                    Stone.fire++;
+                }
+                if (hit.transform.gameObject == waterStone)
+                {
+					Stone.water++;
+                }
+                if (hit.transform.gameObject == woodStone)
+                {
+					Stone.wood++;
+                }
+                if (hit.transform.gameObject == earthStone)
+                {
+					Stone.earth++;
+                }
+                if (hit.transform.gameObject == metalStone)
+                {
+					Stone.metal++;
+                }
+            }
 
 			if (Input.GetMouseButtonDown(0) == true)
 			{
@@ -79,8 +111,6 @@
 				}
 				else
 				{
-					Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-					RaycastHit hit;
 					if (Physics.Raycast(ray, out hit, float.MaxValue, _layerMask))
 					{
 						sentryScreen.GetComponent<SentryMenu>().selectedSentry = hit.transform.gameObject;

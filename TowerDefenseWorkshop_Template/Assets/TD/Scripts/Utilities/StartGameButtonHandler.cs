@@ -36,7 +36,12 @@ namespace GSGD1
             spawnerManager.WaveStatusChanged -= OnWaveStatusChanged;
             spawnerManager.WaveStatusChanged += OnWaveStatusChanged;
             spawnerManager.StartWaves();
+            //StartCoroutine(CoroutineDestroyButton());
         }
+        //public IEnumerator CoroutineDestroyButton()
+        //{
+        //    yield return new WaitForSeconds(1f);
+        //}
 
         private void OnWaveStatusChanged(SpawnerManager sender, SpawnerStatus status, int currentWaveRunning)
         {

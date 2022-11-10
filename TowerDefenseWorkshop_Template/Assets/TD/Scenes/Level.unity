@@ -17557,6 +17557,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6122874926076517765, guid: 23014d1491373f24099b07b44ee44fe4,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 32727
+      objectReference: {fileID: 0}
     - target: {fileID: 6122874926076517767, guid: 23014d1491373f24099b07b44ee44fe4,
         type: 3}
       propertyPath: m_Name
@@ -17651,6 +17656,11 @@ PrefabInstance:
       propertyPath: upgradeButton
       value: 
       objectReference: {fileID: 798987699}
+    - target: {fileID: 6507815803032207354, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6507815803752303133, guid: 5500095ba7dac97468c616b65478eeb0,
         type: 3}
       propertyPath: m_Name

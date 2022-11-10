@@ -7,6 +7,8 @@
 
 	public class WaveEntity : MonoBehaviour
 	{
+		[SerializeField] private Damageable damageable;
+
 		[SerializeField]
 		private PathFollower _pathFollower = null;
 

@@ -16,6 +16,8 @@
 		[SerializeField]
 		private ParticleSystem _deathParticle = null;
 
+		public Stone stone;
+
 		[SerializeField] private int moneyToGive;
 
 		public delegate void DamageableEvent(Damageable caller, int currentHealth, int damageTaken);
@@ -46,6 +48,11 @@
 			if (_health <= 0)
 			{
 				MoneyBehaviour.money += moneyToGive;
+                Debug.Log(stone);
+                if (stone != null)
+                {
+                    Instantiate(stone, transform.position += new Vector3(1,2,0), Quaternion.identity);
+                }
                 _damageTaken?.Invoke(this, _health, damage);
 
 				if (_destroyIfKilled == true)
