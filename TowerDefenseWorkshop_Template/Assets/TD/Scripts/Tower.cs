@@ -18,6 +18,10 @@
 
 		public TowerDescription towerDescription = null;
 
+        public int upgradeLevel = 0;
+        public int maxLevel = 2;
+        public bool isMaxLevel = false;
+
 		private void Awake()
 		{
 			enabled = false;

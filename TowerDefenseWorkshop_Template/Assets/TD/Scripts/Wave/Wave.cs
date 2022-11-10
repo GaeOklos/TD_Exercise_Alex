@@ -10,10 +10,10 @@
 		[SerializeField]
 		private List<WaveEntityDescription> _waveEntitiesDescriptions = null;
 
-		[SerializeField]
-		private float _durationBetweenSpawnedEntity = 1f;
+        [SerializeField]
+        private float _durationBetweenSpawnedEntity = 1f;
 
-		[System.NonSerialized]
+       [System.NonSerialized]
 		private Queue<WaveEntityDescription> _waveElements;
 
 		public List<WaveEntityDescription> WaveEntitiesDescription
