@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+/TowerDefenseWorkshop_Template/Library
+=======
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
@@ -60,3 +63,4 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+>>>>>>> 5fec716b80c14ac91bed053730b91cb5f0e20cfc

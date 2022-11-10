@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/TD/Scenes/MainMenu.unity
     guid: a524500b5a4629744bab7462a4a3072d
   - enabled: 1
-    path: Assets/TD/Scenes/Level.unity
-    guid: 7b2788f011fcb5440bfd155cef145ab9
+    path: Assets/TD/Scenes/Level1.unity
+    guid: 6c7eb8ff214e96c4d9301786d244aae1
+  - enabled: 1
+    path: Assets/TD/Scenes/Level2.unity
+    guid: 114b137d1299d81419432051d425b895
+  - enabled: 1
+    path: Assets/TD/Scenes/Level3.unity
+    guid: bdf52b139aee0a545a95e15abdddfa1a
   m_configObjects: {}
