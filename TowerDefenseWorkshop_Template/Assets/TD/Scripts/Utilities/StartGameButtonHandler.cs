@@ -10,6 +10,12 @@ namespace GSGD1
         [SerializeField]
         private Button _button = null;
 
+        public AProjectile projectileFire;
+        public AProjectile projectileWater;
+        public AProjectile projectileWood;
+        public AProjectile projectileEarth;
+        public AProjectile projectileMetal;
+
         private void OnEnable()
         {
             _button.onClick.RemoveListener(StartGameClicked);

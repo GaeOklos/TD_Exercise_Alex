@@ -15,7 +15,7 @@ public class Mover : MonoBehaviour
     {
         if((Input.GetKey("left")) || (Input.GetKey("q")))
         {
-            if(transform.position.x > xLeftLimit.position.x)
+            if(transform.position.x > xLeftLimit.position.x) 
             {
                 transform.position += new Vector3(-speed * Time.deltaTime, 0, 0);
             }

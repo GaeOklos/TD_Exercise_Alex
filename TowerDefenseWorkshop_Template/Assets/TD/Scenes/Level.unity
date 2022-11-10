@@ -17471,22 +17471,22 @@ PrefabInstance:
     - target: {fileID: 3226228070682216445, guid: 757b40388cb9ad84da1416f933c8cb6b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 3226228070849703500, guid: 757b40388cb9ad84da1416f933c8cb6b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3226228071016923383, guid: 757b40388cb9ad84da1416f933c8cb6b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3226228071495277901, guid: 757b40388cb9ad84da1416f933c8cb6b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 3537670347791595450, guid: 757b40388cb9ad84da1416f933c8cb6b,
         type: 3}

@@ -119,26 +119,31 @@
                         sentryScreen.GetComponent<SentryMenu>().selectedSentry = hit.transform.gameObject;
                         if (Stone.isPeackinWater == true)
 						{
-							sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<ProjectileLauncher>()._projectile = projectileWater;
+							Stone.isPeackinWater = false;
+                            sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<ProjectileLauncher>()._projectile = projectileWater;
 							Stone.water--;
                         }
                         if (Stone.isPeackinFire == true)
                         {
+                            Stone.isPeackinFire = false;
                             sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<ProjectileLauncher>()._projectile = projectileFire;
                             Stone.fire--;
                         }
                         if (Stone.isPeackinMetal == true)
                         {
+                            Stone.isPeackinMetal = false;
                             sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<ProjectileLauncher>()._projectile = projectileMetal;
                             Stone.metal--;
                         }
                         if (Stone.isPeackinWood == true)
                         {
+                            Stone.isPeackinWood = false;
                             sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<ProjectileLauncher>()._projectile = projectileWood;
                             Stone.wood--;
                         }
                         if (Stone.isPeackinEarth == true)
                         {
+                            Stone.isPeackinEarth = false;
                             sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<ProjectileLauncher>()._projectile = projectileEarth;
                             Stone.earth--;
                         }
@@ -157,6 +162,11 @@
 			}
             if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.Escape) == true)
 			{
+				Stone.isPeackinEarth = false;
+				Stone.isPeackinFire = false;
+				Stone.isPeackinMetal = false;
+				Stone.isPeackinWater = false;
+				Stone.isPeackinWood = false;
 				ChangeState(State.Available);
                 sentryScreen.SetActive(false);
             }
