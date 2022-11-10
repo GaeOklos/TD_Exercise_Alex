@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd99a8f66606c214aa1a24137aa27a36, type: 3}
+  m_Name: WaveDatabase
+  m_EditorClassIdentifier: 
+  _waveEntityDatas:
+  - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 80b332533f14b33458e4b73a19244429,
+      type: 3}
+    _entityType: 1
+  - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 507fa02401aa57a4ba706016ce2a62ff,
+      type: 3}
+    _entityType: 5
+  - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 4b3ac31f886d7f844b7babbe3a4afed3,
+      type: 3}
+    _entityType: 3
+  - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 0bf05c3b4dcbce74f99337061d768f04,
+      type: 3}
+    _entityType: 6
+  - _waveEntityPrefab: {fileID: 5412690654039449867, guid: e7391e6f5c2616e4a9e99bb4354b13ba,
+      type: 3}
+    _entityType: 2
+  - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 11c39c94b9213154ca5ae053268a2b98,
+      type: 3}
+    _entityType: 4
+  _waves:
+  - {fileID: 11400000, guid: 8b88c6916387eab428f8e94ea91bec7b, type: 2}
+  - {fileID: 11400000, guid: e087a4f468329e04f8d6d9df5f75fccb, type: 2}
+  - {fileID: 11400000, guid: af84c6af62748a64fa74aed0c6a35684, type: 2}

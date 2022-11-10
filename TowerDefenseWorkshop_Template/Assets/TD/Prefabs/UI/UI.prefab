@@ -539,7 +539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6507815803004199983
 RectTransform:
   m_ObjectHideFlags: 0
@@ -870,6 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedSentry: {fileID: 0}
+  upgradeButton: {fileID: 0}
 --- !u!1 &6507815803042863890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,7 +1112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6507815803199961420
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1668,7 +1669,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6507815803776932170
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1804,7 +1805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6507815803908502738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1925,7 +1926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6507815804029244274
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2458,7 +2459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6507815804267042644
 RectTransform:
   m_ObjectHideFlags: 0
