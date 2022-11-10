@@ -11,7 +11,11 @@
 		[SerializeField]
 		private float _extraDurationAfterSpawned = 0;
 
-		public EntityType EntityType
+        [SerializeField]
+        private EntityStone _entityStone = EntityStone.None;
+
+
+        public EntityType EntityType
 		{
 			get
 			{
@@ -19,7 +23,15 @@
 			}
 		}
 
-		public float ExtraDurationAfterSpawned
+        public EntityStone EntityStone
+        {
+            get
+            {
+                return _entityStone;
+            }
+        }
+
+        public float ExtraDurationAfterSpawned
 		{
 			get
 			{

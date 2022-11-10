@@ -18,17 +18,33 @@
 		Earth,
 		Metal
 	}
-
-	[CreateAssetMenu(menuName = "GameSup/WaveDatabase")]
-	public class WaveDatabase : ScriptableObject
+	
+	public enum EntityStone
 	{
-		[SerializeField]
-		private List<WaveEntityData> _waveEntityDatas = null;
+		None,
+        Water,
+        Fire,
+        Wood, 
+		Earth,
+		Metal
+	}
+
+    [CreateAssetMenu(menuName = "GameSup/WaveDatabase")]
+	public class WaveDatabase : ScriptableObject
+    {
+        [SerializeField]
+        private List<WaveEntityData> _waveEntityDatas = null;
+
+        [SerializeField]
+        private List<StoneDatabase> _stoneEntityDatas = null;
+
+        [SerializeField]
+        private List<WaveSet> _waves = null;
 
 		[SerializeField]
-		private List<WaveSet> _waves = null;
+        private List<StoneDatabase> _stone = null;
 
-		public List<WaveSet> Waves
+        public List<WaveSet> Waves
 		{
 			get { return _waves; }
 		}
@@ -44,7 +60,18 @@
 			outEntity = null;
 			return false;
 		}
-	}
+        public bool GetWaveStoneElement(EntityStone entityStone, out Stone outStone)
+        {
+            StoneDatabase stoneDatabase = _stoneEntityDatas.Find(entity => entity.EntityStone == entityStone);
+            if (stoneDatabase != null)
+            {
+                outStone = stoneDatabase.Stone;
+                return true;
+            }
+            outStone = null;
+            return false;
+        }
+    }
 
 #if UNITY_EDITOR
 	[CustomEditor(typeof(WaveDatabase))]

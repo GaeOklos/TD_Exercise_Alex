@@ -565,7 +565,6 @@ GameObject:
   m_Component:
   - component: {fileID: 302692792590252285}
   - component: {fileID: 302692792590252287}
-  - component: {fileID: 302692792590252284}
   m_Layer: 0
   m_Name: WeaponController
   m_TagString: Untagged
@@ -602,27 +601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a359563d28733241b63a6582bf325a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weapon: {fileID: 302692792590252284}
+  _weapon: {fileID: 2394244273097544805}
   _rotationSpeed: 50
   _minAngleToFire: 10
---- !u!114 &302692792590252284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302692792590252162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b7f346b16eef3347a7f5f9a3781f931, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timer:
-    _duration: 1
-    _stopWhenCompleted: 1
-  _projectile: {fileID: 1697648429471405643, guid: a1a1140bdc5abfd4b923056be28d793a,
-    type: 3}
-  _projectileAnchor: {fileID: 302692792940769431}
 --- !u!1 &302692792940769428
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,6 +648,7 @@ GameObject:
   - component: {fileID: 302692793403659942}
   - component: {fileID: 302692793403659943}
   - component: {fileID: 302692793403659936}
+  - component: {fileID: 2394244273097544805}
   m_Layer: 0
   m_Name: Tower.Alt03
   m_TagString: Untagged
@@ -706,6 +688,9 @@ MonoBehaviour:
   _weaponController: {fileID: 302692792590252287}
   _damageableDetector: {fileID: 302692793403659942}
   towerDescription: {fileID: 11400000, guid: ca9f0b9e3efdd4f44ba11e998dd0454f, type: 2}
+  upgradeLevel: 0
+  maxLevel: 2
+  isMaxLevel: 0
 --- !u!114 &302692793403659942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,6 +732,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2394244273097544805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302692793403659941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7f346b16eef3347a7f5f9a3781f931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timer:
+    _duration: 1
+    _stopWhenCompleted: 1
+  _projectile: {fileID: 1697648429471405643, guid: a1a1140bdc5abfd4b923056be28d793a,
+    type: 3}
+  _projectileAnchor: {fileID: 302692792940769431}
+  damage: 1
 --- !u!1 &302692793443834627
 GameObject:
   m_ObjectHideFlags: 0

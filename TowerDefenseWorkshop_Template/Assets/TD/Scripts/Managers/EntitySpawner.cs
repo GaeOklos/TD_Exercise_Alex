@@ -38,7 +38,7 @@
 		private WaveEntity InstantiateEntity(WaveEntity entityPrefab)
 		{
 			WaveEntity entityInstance = Instantiate(entityPrefab, _instancesRoot);
-			_runtimeWaveEntities.Add(entityInstance);
+            _runtimeWaveEntities.Add(entityInstance);
 			EntitySpawned?.Invoke(this, entityInstance);
 			return entityInstance;
 		}
@@ -54,6 +54,11 @@
 					outEntity = InstantiateEntity(outEntity);
 					outEntity.SetPath(_path);
 					_timer.Set(_wave.DurationBetweenSpawnedEntity + nextEntity.ExtraDurationAfterSpawned).Start();
+
+					if(DatabaseManager.Instance.WaveDatabase.GetWaveStoneElement(nextEntity.EntityStone, out Stone outStone) == true)
+					{
+
+					}
 				}
 				else
 				{
