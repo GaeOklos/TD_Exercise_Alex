@@ -32,16 +32,16 @@ namespace GSGD1
 
         private void StartGameClicked()
         {
-            StartCoroutine(CoroutineDestroyButton());
-        }
-        public IEnumerator CoroutineDestroyButton()
-        {
-            yield return new WaitForSeconds(1f);
             SpawnerManager spawnerManager = LevelReferences.Instance.SpawnerManager;
             spawnerManager.WaveStatusChanged -= OnWaveStatusChanged;
             spawnerManager.WaveStatusChanged += OnWaveStatusChanged;
             spawnerManager.StartWaves();
+            //StartCoroutine(CoroutineDestroyButton());
         }
+        //public IEnumerator CoroutineDestroyButton()
+        //{
+        //    yield return new WaitForSeconds(1f);
+        //}
 
         private void OnWaveStatusChanged(SpawnerManager sender, SpawnerStatus status, int currentWaveRunning)
         {

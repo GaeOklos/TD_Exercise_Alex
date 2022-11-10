@@ -15660,7 +15660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9642afa5289d3542bacf1aec765f572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waveDatabase: {fileID: 11400000, guid: 4b50fb78cc2ce0e4988362502b328c34, type: 2}
+  _waveDatabase: {fileID: 11400000, guid: 0c39ccefeb617144c9db545ace8b6e29, type: 2}
 --- !u!4 &313130625
 Transform:
   m_ObjectHideFlags: 0

@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Stone : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public static int fire;
+    public static int water;
+    public static int wood;
+    public static int earth;
+    public static int metal;
 }
