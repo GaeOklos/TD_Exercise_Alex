@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Pause_Menu : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Pause_Menu : MonoBehaviour
 		public Button buttonSpeed;
 		private bool _isDead = false;
 		string sceneName;
+		[SerializeField] private TextMeshProUGUI _textSpeedOfLevel;
 
 		public void Pause()
 		{
@@ -29,6 +31,7 @@ public class Pause_Menu : MonoBehaviour
 		public void Resume()
 		{
 			if (_isDead == false) {
+           		_textSpeedOfLevel.SetText("x1");
 				PauseMenuUI.SetActive(false);
 				buttonPause.gameObject.SetActive(true);
 				buttonSpeed.gameObject.SetActive(true);
@@ -69,5 +72,4 @@ public class Pause_Menu : MonoBehaviour
 				}
 			}
 		}
-
 }
