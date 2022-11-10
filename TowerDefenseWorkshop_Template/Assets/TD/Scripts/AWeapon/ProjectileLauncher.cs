@@ -16,7 +16,6 @@
 		protected override void DoFire()
 		{
 			var instance = Instantiate(_projectile, _projectileAnchor.position, _projectileAnchor.rotation);
-
         }
 	}
 }

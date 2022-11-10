@@ -48,7 +48,6 @@
 			if (_health <= 0)
 			{
 				MoneyBehaviour.money += moneyToGive;
-                Debug.Log(stone);
                 if (stone != null)
                 {
                     Instantiate(stone, transform.position += new Vector3(1,2,0), Quaternion.identity);

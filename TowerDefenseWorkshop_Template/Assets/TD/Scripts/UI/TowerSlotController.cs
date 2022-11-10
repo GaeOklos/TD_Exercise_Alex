@@ -26,14 +26,16 @@
         [SerializeField]
         private LayerMask _layerMask;
 
+        [SerializeField] private LayerMask stoneLayer;
+
         [SerializeField]
         private GameObject sentryScreen;
 
-		[SerializeField] private GameObject fireStone;
-		[SerializeField] private GameObject waterStone;
-		[SerializeField] private GameObject woodStone;
-		[SerializeField] private GameObject earthStone;
-		[SerializeField] private GameObject metalStone;
+        public AProjectile projectileFire;
+        public AProjectile projectileWater;
+        public AProjectile projectileWood;
+        public AProjectile projectileEarth;
+        public AProjectile projectileMetal;
 
         public PlayerPickerController PlayerPickerController
 		{
@@ -73,29 +75,30 @@
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
-			if(Physics.Raycast(ray, out hit, float.MaxValue, 14))
-			{
-				//Recupere StoneDatabase
-				if(hit.transform.gameObject == fireStone)
+			if(Physics.Raycast(ray, out hit, float.MaxValue, stoneLayer))
+            {
+                //Recupere Stone
+                if (hit.transform.parent.gameObject.GetComponent<Stone>().type == "fire")
                 {
                     Stone.fire++;
                 }
-                if (hit.transform.gameObject == waterStone)
+                if (hit.transform.parent.gameObject.GetComponent<Stone>().type == "water")
                 {
 					Stone.water++;
                 }
-                if (hit.transform.gameObject == woodStone)
+                if (hit.transform.parent.gameObject.GetComponent<Stone>().type == "wood")
                 {
 					Stone.wood++;
                 }
-                if (hit.transform.gameObject == earthStone)
+                if (hit.transform.parent.gameObject.GetComponent<Stone>().type == "earth")
                 {
 					Stone.earth++;
                 }
-                if (hit.transform.gameObject == metalStone)
+                if (hit.transform.parent.gameObject.GetComponent<Stone>().type == "metal")
                 {
 					Stone.metal++;
                 }
+				Destroy(hit.transform.parent.gameObject);
             }
 
 			if (Input.GetMouseButtonDown(0) == true)
@@ -112,8 +115,33 @@
 				else
 				{
 					if (Physics.Raycast(ray, out hit, float.MaxValue, _layerMask))
-					{
-						sentryScreen.GetComponent<SentryMenu>().selectedSentry = hit.transform.gameObject;
+                    {
+                        sentryScreen.GetComponent<SentryMenu>().selectedSentry = hit.transform.gameObject;
+                        if (Stone.isPeackinWater == true)
+						{
+							sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<ProjectileLauncher>()._projectile = projectileWater;
+							Stone.water--;
+                        }
+                        if (Stone.isPeackinFire == true)
+                        {
+                            sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<ProjectileLauncher>()._projectile = projectileFire;
+                            Stone.fire--;
+                        }
+                        if (Stone.isPeackinMetal == true)
+                        {
+                            sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<ProjectileLauncher>()._projectile = projectileMetal;
+                            Stone.metal--;
+                        }
+                        if (Stone.isPeackinWood == true)
+                        {
+                            sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<ProjectileLauncher>()._projectile = projectileWood;
+                            Stone.wood--;
+                        }
+                        if (Stone.isPeackinEarth == true)
+                        {
+                            sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<ProjectileLauncher>()._projectile = projectileEarth;
+                            Stone.earth--;
+                        }
                         sentryScreen.SetActive(true);
 
                         if (sentryScreen.GetComponent<SentryMenu>().selectedSentry.GetComponent<Tower>().isMaxLevel == true)

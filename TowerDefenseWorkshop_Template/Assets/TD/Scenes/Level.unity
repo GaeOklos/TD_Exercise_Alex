@@ -17661,6 +17661,71 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6507815803751301322, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: fireStone
+      value: 
+      objectReference: {fileID: 310651771024511445, guid: 247f5e2365fd45e4380808dd9c0be009,
+        type: 3}
+    - target: {fileID: 6507815803751301322, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: woodStone
+      value: 
+      objectReference: {fileID: 310651771024511445, guid: 245e045256f0c5f4fa8862ac0f040d64,
+        type: 3}
+    - target: {fileID: 6507815803751301322, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: earthStone
+      value: 
+      objectReference: {fileID: 310651771024511445, guid: 86d27846b4bbd3f45b85b6916538288b,
+        type: 3}
+    - target: {fileID: 6507815803751301322, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: metalStone
+      value: 
+      objectReference: {fileID: 310651771024511445, guid: cace3592e6d2594468d58eba07a6b534,
+        type: 3}
+    - target: {fileID: 6507815803751301322, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: waterStone
+      value: 
+      objectReference: {fileID: 310651771024511445, guid: e1e20f1ba64eaef4e803129001d5ed91,
+        type: 3}
+    - target: {fileID: 6507815803751301322, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: projectileFire
+      value: 
+      objectReference: {fileID: 1697648429471405643, guid: 807d0f29e15982a4b93ca3e168cb4d29,
+        type: 3}
+    - target: {fileID: 6507815803751301322, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: projectileWood
+      value: 
+      objectReference: {fileID: 1697648429471405643, guid: 90f0d81ececb2f840aa719964ccacf73,
+        type: 3}
+    - target: {fileID: 6507815803751301322, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: projectileEarth
+      value: 
+      objectReference: {fileID: 1697648429471405643, guid: ffb2eae2b88179c48826d4ee46a01baa,
+        type: 3}
+    - target: {fileID: 6507815803751301322, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: projectileMetal
+      value: 
+      objectReference: {fileID: 1697648429471405643, guid: aa62d389bb7872d4eb0ded5399e2d9e6,
+        type: 3}
+    - target: {fileID: 6507815803751301322, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: projectileWater
+      value: 
+      objectReference: {fileID: 1697648429471405643, guid: a55cfc7cae54ce94da94abcd2f89300a,
+        type: 3}
+    - target: {fileID: 6507815803751301322, guid: 5500095ba7dac97468c616b65478eeb0,
+        type: 3}
+      propertyPath: stoneLayer.m_Bits
+      value: 16384
+      objectReference: {fileID: 0}
     - target: {fileID: 6507815803752303133, guid: 5500095ba7dac97468c616b65478eeb0,
         type: 3}
       propertyPath: m_Name
