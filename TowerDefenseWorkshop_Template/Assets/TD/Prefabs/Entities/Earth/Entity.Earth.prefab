@@ -62,8 +62,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _path: {fileID: 0}
-  _moveSpeed: 3
-  _rotateSpeed: 5
+  _moveSpeed: 1
+  _rotateSpeed: 2
   _distanceThreshold: 0.5
 --- !u!114 &2942146037294568419
 MonoBehaviour:
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 968f346eb553e164c875a02622739750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 3
+  _health: 5
   _destroyIfKilled: 1
   _aimPosition: {fileID: 2942146038031326620}
   _deathParticle: {fileID: 6159851731732633496, guid: fad479241fc5cca47b823fc8ac0cd376,

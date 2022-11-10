@@ -270,7 +270,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5192126630413081373}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5456310238939130209}
+        m_TargetAssemblyTypeName: Stone, Assembly-CSharp
+        m_MethodName: PickWood
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2274256264156678082
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,9 +294,9 @@ GameObject:
   - component: {fileID: 8714524101622821687}
   - component: {fileID: 6260225770886245666}
   - component: {fileID: 6830042526458460376}
-  - component: {fileID: 5674263582624689890}
+  - component: {fileID: 7669800509090723956}
   m_Layer: 5
-  m_Name: TextFire
+  m_Name: TextEarth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -407,7 +419,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5674263582624689890
+--- !u!114 &7669800509090723956
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -416,10 +428,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2274256264156678082}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2587b5284d1c17043942ee985c480680, type: 3}
+  m_Script: {fileID: 11500000, guid: 9db7b6fad010269449e862b42f6f06ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 6830042526458460376}
 --- !u!1 &2585873022763514252
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,9 +443,9 @@ GameObject:
   - component: {fileID: 8852127418058576891}
   - component: {fileID: 5105335998739498116}
   - component: {fileID: 1521491504828602981}
-  - component: {fileID: 7648365272357162901}
+  - component: {fileID: 482814880989712250}
   m_Layer: 5
-  m_Name: TextFire
+  m_Name: TextMetal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -556,7 +568,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7648365272357162901
+--- !u!114 &482814880989712250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -565,10 +577,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2585873022763514252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2587b5284d1c17043942ee985c480680, type: 3}
+  m_Script: {fileID: 11500000, guid: ea21d15085baece40ae0346b5c849327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 1521491504828602981}
 --- !u!1 &3022710314441807678
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,8 +592,9 @@ GameObject:
   - component: {fileID: 618323099695144919}
   - component: {fileID: 8532860143128689027}
   - component: {fileID: 8661401403819938713}
+  - component: {fileID: 6579514706970507047}
   m_Layer: 5
-  m_Name: TextFire
+  m_Name: TextWater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -704,6 +717,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6579514706970507047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3022710314441807678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57429ec91bfc564fb5f8f3a5102b943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 8661401403819938713}
 --- !u!1 &5817449808052079202
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +851,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1420217487769838494}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5456310238939130209}
+        m_TargetAssemblyTypeName: Stone, Assembly-CSharp
+        m_MethodName: PickEarth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6507815802298856420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6507815803004199983
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1293,7 +1331,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 10e5e2a33d3e93449ada7c430f25beba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f19ac1fdfa882a4092cae81567065f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1817,7 +1855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6507815803199961420
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2359,12 +2397,15 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 16
+  stoneLayer:
+    serializedVersion: 2
+    m_Bits: 0
   sentryScreen: {fileID: 6507815803032207354}
-  fireStone: {fileID: 0}
-  waterStone: {fileID: 0}
-  woodStone: {fileID: 0}
-  earthStone: {fileID: 0}
-  metalStone: {fileID: 0}
+  projectileFire: {fileID: 0}
+  projectileWater: {fileID: 0}
+  projectileWood: {fileID: 0}
+  projectileEarth: {fileID: 0}
+  projectileMetal: {fileID: 0}
 --- !u!1 &6507815803752303133
 GameObject:
   m_ObjectHideFlags: 0
@@ -2430,7 +2471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6507815803776932170
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2566,7 +2607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6507815803908502738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2687,7 +2728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6507815804029244274
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3223,7 +3264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6507815804267042644
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3461,7 +3502,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4172445100634840112}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5456310238939130209}
+        m_TargetAssemblyTypeName: Stone, Assembly-CSharp
+        m_MethodName: PickMetal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6942903016050376744
 GameObject:
   m_ObjectHideFlags: 0
@@ -3473,6 +3526,7 @@ GameObject:
   - component: {fileID: 2681024787943378479}
   - component: {fileID: 3901961658227990808}
   - component: {fileID: 7433057207467261016}
+  - component: {fileID: 5456310238939130209}
   m_Layer: 5
   m_Name: StoneMenu
   m_TagString: Untagged
@@ -3543,6 +3597,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5456310238939130209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6942903016050376744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2e426f4bbc3dc4a8e306dc799422e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 
 --- !u!1 &7742725153227606349
 GameObject:
   m_ObjectHideFlags: 0
@@ -3554,9 +3621,9 @@ GameObject:
   - component: {fileID: 7825263919592683266}
   - component: {fileID: 6915587308239042519}
   - component: {fileID: 1376479333728526703}
-  - component: {fileID: 2931902320301197422}
+  - component: {fileID: 2638166767510061150}
   m_Layer: 5
-  m_Name: TextFire
+  m_Name: TextWood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3679,7 +3746,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2931902320301197422
+--- !u!114 &2638166767510061150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3688,10 +3755,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7742725153227606349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2587b5284d1c17043942ee985c480680, type: 3}
+  m_Script: {fileID: 11500000, guid: 81fa1e11391c5014f85c266b47156c29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 1376479333728526703}
 --- !u!1 &9083955479625722930
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,7 +3880,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3108551042366220064}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5456310238939130209}
+        m_TargetAssemblyTypeName: Stone, Assembly-CSharp
+        m_MethodName: PickFire
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9194435163515635612
 GameObject:
   m_ObjectHideFlags: 0
@@ -3935,7 +4014,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5412795460685115722}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5456310238939130209}
+        m_TargetAssemblyTypeName: Stone, Assembly-CSharp
+        m_MethodName: PickWater
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1449351110356741344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4313,6 +4404,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3584053796114750688, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: _isButChangerScene
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3584053796114750702, guid: 18752b1bd2fce4a43855b673703d5dfc,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -4361,12 +4457,47 @@ PrefabInstance:
     - target: {fileID: 3584053796317413071, guid: 18752b1bd2fce4a43855b673703d5dfc,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3584053796317413071, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3548309655944653891}
     - target: {fileID: 3584053796317413071, guid: 18752b1bd2fce4a43855b673703d5dfc,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
+      objectReference: {fileID: 8773290813858394909}
+    - target: {fileID: 3584053796317413071, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CurLoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584053796317413071, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: ClickOnBut
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584053796317413071, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Pause_Menu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584053796317413071, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: SC_An_But, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584053796317413071, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584053796317413071, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3584053796421362866, guid: 18752b1bd2fce4a43855b673703d5dfc,
         type: 3}
@@ -4396,27 +4527,47 @@ PrefabInstance:
     - target: {fileID: 3584053796574141053, guid: 18752b1bd2fce4a43855b673703d5dfc,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3584053796574141053, guid: 18752b1bd2fce4a43855b673703d5dfc,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
+      objectReference: {fileID: 3548309655944653891}
+    - target: {fileID: 3584053796574141053, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
       objectReference: {fileID: 8773290814121482147}
     - target: {fileID: 3584053796574141053, guid: 18752b1bd2fce4a43855b673703d5dfc,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584053796574141053, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: ClickOnBut
       objectReference: {fileID: 0}
     - target: {fileID: 3584053796574141053, guid: 18752b1bd2fce4a43855b673703d5dfc,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Pause_Menu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584053796574141053, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: SC_An_But, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3584053796574141053, guid: 18752b1bd2fce4a43855b673703d5dfc,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584053796574141053, guid: 18752b1bd2fce4a43855b673703d5dfc,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3584053797203165898, guid: 18752b1bd2fce4a43855b673703d5dfc,
         type: 3}
@@ -4570,6 +4721,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8773290813858394909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3584053796317413057, guid: 18752b1bd2fce4a43855b673703d5dfc,
+    type: 3}
+  m_PrefabInstance: {fileID: 5223577929196867036}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b82c0e9e939134044957205ca4bf70d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &8773290814121482147 stripped

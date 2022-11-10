@@ -42,7 +42,7 @@ public class SC_AudioManager : MonoBehaviour
 
     public AudioSource PlayClipAt(AudioClip clip, Vector3 pos)
     {
-        /*To play the sound :
+        /*To play the sound:
         public AudioClip sound;
         
         GameObject.FindGameObjectWithTag("AudioManager").GetComponent<SC_AudioManager>().PlayClipAt(sound, this.transform.position);
