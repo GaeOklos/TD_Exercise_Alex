@@ -51,7 +51,7 @@ MonoBehaviour:
   strenght:
     serializedVersion: 2
     m_Bits: 512
-  _moveSpeed: 25
+  _moveSpeed: 100
 --- !u!54 &1697648429471405642
 Rigidbody:
   m_ObjectHideFlags: 0
