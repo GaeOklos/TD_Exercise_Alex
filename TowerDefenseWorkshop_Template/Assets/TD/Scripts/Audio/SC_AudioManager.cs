@@ -34,10 +34,10 @@ public class SC_AudioManager : MonoBehaviour
 
     private void Update()
     {
-        if (audioSource.isPlaying == false) {
-            audioSource.clip = playlist[0];
-            audioSource.Play();
-        }
+        // if (audioSource.isPlaying == false) {
+        //     audioSource.clip = playlist[0];
+        //     audioSource.Play();
+        // }
     }
 
     public AudioSource PlayClipAt(AudioClip clip, Vector3 pos)
@@ -51,17 +51,17 @@ public class SC_AudioManager : MonoBehaviour
 
         // Pour régler le soucis d'avoir des sons qui ne se destroy jamais à cause du time 0
         // _soundAlreadyExist = GameObject.FindGameObjectsWithTag("TempAudioTag");
-        for (int i = 0; i < _soundAlreadyExist.Length; i++)
-            Destroy(_soundAlreadyExist[i]);
+        // for (int i = 0; i < _soundAlreadyExist.Length; i++)
+        //     Destroy(_soundAlreadyExist[i]);
 
-        GameObject tempGO = new GameObject("TempAudio");
-        tempGO.transform.position = pos;
-        tempGO.gameObject.tag="TempAudioTag";
-        AudioSource audioSource = tempGO.AddComponent<AudioSource>();
-        audioSource.clip = clip;
-        audioSource.outputAudioMixerGroup = soundEffectMixer;
-        audioSource.Play();
-        Destroy(tempGO, clip.length);
+        // GameObject tempGO = new GameObject("TempAudio");
+        // tempGO.transform.position = pos;
+        // tempGO.gameObject.tag="TempAudioTag";
+        // AudioSource audioSource = tempGO.AddComponent<AudioSource>();
+        // audioSource.clip = clip;
+        // audioSource.outputAudioMixerGroup = soundEffectMixer;
+        // audioSource.Play();
+        // Destroy(tempGO, clip.length);
         return audioSource;
     }
 }
