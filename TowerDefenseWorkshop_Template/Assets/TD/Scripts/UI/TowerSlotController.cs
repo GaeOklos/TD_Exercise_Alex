@@ -65,6 +65,12 @@
 
 		private void Update()
 		{
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+			if(Physics.Raycast(ray, out hit, float.MaxValue, 14))
+			{
+				//Recupere StoneDatabase
+			}
 
 			if (Input.GetMouseButtonDown(0) == true)
 			{
@@ -79,8 +85,6 @@
 				}
 				else
 				{
-					Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-					RaycastHit hit;
 					if (Physics.Raycast(ray, out hit, float.MaxValue, _layerMask))
 					{
 						sentryScreen.GetComponent<SentryMenu>().selectedSentry = hit.transform.gameObject;

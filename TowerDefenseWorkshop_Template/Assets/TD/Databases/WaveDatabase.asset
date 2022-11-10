@@ -31,7 +31,24 @@ MonoBehaviour:
   - _waveEntityPrefab: {fileID: 5412690654039449867, guid: 11c39c94b9213154ca5ae053268a2b98,
       type: 3}
     _entityType: 4
+  _stoneEntityDatas: []
   _waves:
   - {fileID: 11400000, guid: a459061dc5860024590f76ddef462ecd, type: 2}
   - {fileID: 11400000, guid: a530391b5ce8c734eac723b1d05fa896, type: 2}
   - {fileID: 11400000, guid: d30e20404f780554084a0b1674949f70, type: 2}
+  _stone:
+  - _waveEntityStone: {fileID: -8786491417803363345, guid: e1e20f1ba64eaef4e803129001d5ed91,
+      type: 3}
+    _entityStone: 1
+  - _waveEntityStone: {fileID: -1507551764436769266, guid: 247f5e2365fd45e4380808dd9c0be009,
+      type: 3}
+    _entityStone: 2
+  - _waveEntityStone: {fileID: 8041770512092158321, guid: 245e045256f0c5f4fa8862ac0f040d64,
+      type: 3}
+    _entityStone: 3
+  - _waveEntityStone: {fileID: 2773187839896576973, guid: 86d27846b4bbd3f45b85b6916538288b,
+      type: 3}
+    _entityStone: 4
+  - _waveEntityStone: {fileID: 8814640346594270286, guid: cace3592e6d2594468d58eba07a6b534,
+      type: 3}
+    _entityStone: 5
