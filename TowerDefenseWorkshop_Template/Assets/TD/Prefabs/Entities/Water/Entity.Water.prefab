@@ -63,7 +63,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _path: {fileID: 0}
   _moveSpeed: 3
-  _rotateSpeed: 5
+  _rotateSpeed: 6
   _distanceThreshold: 0.5
 --- !u!114 &2942146037294568419
 MonoBehaviour:
