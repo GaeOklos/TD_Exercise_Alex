@@ -11,7 +11,11 @@
 		[SerializeField]
 		private float _extraDurationAfterSpawned = 0;
 
-		public EntityType EntityType
+		[SerializeField]
+		private bool _DropStone;
+
+
+        public EntityType EntityType
 		{
 			get
 			{

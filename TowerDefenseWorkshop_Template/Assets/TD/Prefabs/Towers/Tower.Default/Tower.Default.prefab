@@ -688,6 +688,9 @@ MonoBehaviour:
   _weaponController: {fileID: 302692792590252287}
   _damageableDetector: {fileID: 302692793403659942}
   towerDescription: {fileID: 11400000, guid: 3c17f69342ee17548aad51beb5e36ac3, type: 2}
+  upgradeLevel: 0
+  maxLevel: 2
+  isMaxLevel: 0
 --- !u!114 &302692793403659942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,7 +747,7 @@ MonoBehaviour:
   _timer:
     _duration: 1
     _stopWhenCompleted: 1
-  _projectile: {fileID: 1697648429471405643, guid: e7b0c9c448711f440aa3ac6a1572181f,
+  _projectile: {fileID: 1697648429471405643, guid: a1a1140bdc5abfd4b923056be28d793a,
     type: 3}
   _projectileAnchor: {fileID: 302692792940769431}
   damage: 1
