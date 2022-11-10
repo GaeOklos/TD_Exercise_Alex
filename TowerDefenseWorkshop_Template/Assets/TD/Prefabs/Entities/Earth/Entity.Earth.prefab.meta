@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:TowerDefenseWorkshop_Template/Assets/TD/Prefabs/Entities/Fire/Entity.Fire.prefab.meta
+guid: a5c91c23e3360914781cb28c77661660
+========
 guid: 507fa02401aa57a4ba706016ce2a62ff
+>>>>>>>> 150631dce53daf1c6c355ca3d61159a14af0dc31:TowerDefenseWorkshop_Template/Assets/TD/Prefabs/Entities/Earth/Entity.Earth.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
