@@ -4,6 +4,8 @@ namespace GSGD1
 	using System.Collections.Generic;
 	using UnityEngine;
 	using UnityEngine.Events;
+	using UnityEngine.UI;
+	using UnityEngine.SceneManagement;
 
 	public enum SpawnerIndex
 	{
@@ -33,7 +35,12 @@ namespace GSGD1
 		private int _currentWaveRunning = 0;
 
 		[SerializeField]
+		private GameObject _winScreenRef = null;
+
+		[SerializeField]
 		public UnityEvent<SpawnerManager, SpawnerStatus, int> WaveStatusChanged_UnityEvent = null;
+
+		private string sceneName = null;
 
 		public delegate void SpawnerEvent(SpawnerManager sender, SpawnerStatus status, int runningWaveCount);
 		public event SpawnerEvent WaveStatusChanged = null;
@@ -82,7 +89,9 @@ namespace GSGD1
 			}
 			else
 			{
-				// No waves left : end game
+				sceneName = SceneManager.GetActiveScene().name;
+				Time.timeScale = 1;
+				_winScreenRef.SetActive(true);
 			}
 		}
 

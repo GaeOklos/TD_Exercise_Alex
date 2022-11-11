@@ -7,7 +7,8 @@ using TMPro;
 
 public class Pause_Menu : MonoBehaviour
 {
-
+		[SerializeField]
+		private GameObject _pauseMenuPanel = null;
 		private bool _isPause = false;
     	public GameObject PauseMenuUI;
 		public Button buttonPlay;
@@ -21,6 +22,7 @@ public class Pause_Menu : MonoBehaviour
 		{
 			if (_isDead == false) {
 				PauseMenuUI.SetActive(true);
+				_pauseMenuPanel.SetActive(true);
 				buttonPause.gameObject.SetActive(false);
 				buttonSpeed.gameObject.SetActive(false);
 				buttonPlay.gameObject.SetActive(true);
@@ -32,6 +34,7 @@ public class Pause_Menu : MonoBehaviour
 		{
 			if (_isDead == false) {
            		_textSpeedOfLevel.SetText("x1");
+				_pauseMenuPanel.SetActive(false);
 				PauseMenuUI.SetActive(false);
 				buttonPause.gameObject.SetActive(true);
 				buttonSpeed.gameObject.SetActive(true);

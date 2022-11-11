@@ -16,15 +16,11 @@ public class SC_An_But : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     [SerializeField]
     private SC_AudioManager _audioManagerRef = null;
 
-
-    
     public void ClickOnBut() {
         // _audioManagerRef.PlayClipAt(soundClick, this.transform.position);
         if (_isButChangerScene)
             animatorButton.SetTrigger("Trigger_Click");
     }
-
-    
 
     private void ChangeToHovered() {
         animatorButton.SetTrigger("Trigger_Hovered");
