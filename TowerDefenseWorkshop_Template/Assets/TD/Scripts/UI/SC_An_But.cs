@@ -6,18 +6,14 @@ using UnityEngine.EventSystems;
 public class SC_An_But : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public Animator animatorButton;
-    public AudioClip soundClick;
 
     [SerializeField]
     private bool _isButChangerScene = true;
 
     private bool _isHovered = false;
 
-    [SerializeField]
-    private SC_AudioManager _audioManagerRef = null;
 
     public void ClickOnBut() {
-        // _audioManagerRef.PlayClipAt(soundClick, this.transform.position);
         if (_isButChangerScene)
             animatorButton.SetTrigger("Trigger_Click");
     }
